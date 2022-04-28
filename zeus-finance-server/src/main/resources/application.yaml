@@ -1,0 +1,11 @@
+server:
+  port: 9990
+spring:
+  datasource:
+    name: druidDataSource
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://rm-wz963ju312wgv19502o.mysql.rds.aliyuncs.com:3306/fuxi
+      username: mozi_root
+      password: Cd40k1SKIXBQ
