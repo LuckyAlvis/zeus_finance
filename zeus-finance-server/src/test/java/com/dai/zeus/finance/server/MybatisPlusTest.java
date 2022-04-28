@@ -86,4 +86,14 @@ public class MybatisPlusTest {
         List<User> users = userMapper.selectByMap(map);
         users.forEach(System.out::println);
     }
+
+    /**
+     * 自定义查询
+     */
+    @Test
+    public void testSelectByIdMapper() {
+        Map<String, Object> map = userMapper.selectMapById(4L);
+        System.out.println(map);
+
+    }
 }
