@@ -12,7 +12,8 @@ spring:
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-  // 通过全局配置，设置实体类所对应表的统一前缀
+#  通过全局配置，设置实体类所对应表的统一前缀
 #  global-config:
 #    db-config:
+#      id-type: auto // id策略全局配置
 #      table-prefix: t_
