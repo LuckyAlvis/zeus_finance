@@ -1,7 +1,7 @@
 package com.dai.zeus.finance.server.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.dai.zeus.finance.server.entity.User;
+import com.dai.zeus.finance.api.pojo.entity.User;
 import org.apache.ibatis.annotations.MapKey;
 import org.springframework.stereotype.Repository;
 

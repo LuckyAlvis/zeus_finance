@@ -1,7 +1,7 @@
 package com.dai.zeus.finance.server;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.dai.zeus.finance.server.entity.User;
+import com.dai.zeus.finance.api.pojo.entity.User;
 import com.dai.zeus.finance.server.mapper.UserMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
