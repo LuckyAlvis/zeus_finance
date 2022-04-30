@@ -2,6 +2,7 @@ package com.dai.zeus.finance.server.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableLogic;
 import lombok.Data;
 
 @Data
@@ -21,5 +22,6 @@ public class User {
     private String password;
     private String email;
     private Integer status;
+    @TableLogic
     private Boolean isDelete;
 }
