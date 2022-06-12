@@ -1,13 +1,9 @@
 package com.dai.zeus.finance.server;
 
-import com.dai.zeus.finance.api.pojo.entity.User;
 import com.dai.zeus.finance.server.service.UserService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-
-import java.util.ArrayList;
-import java.util.List;
 
 @SpringBootTest
 public class MybatisPlusServiceTest {
@@ -22,17 +18,17 @@ public class MybatisPlusServiceTest {
         System.out.println("count: " + count);
     }
 
-    @Test
-    public void testSave() {
-        List<User> userList = new ArrayList<>();
-        for (int i = 1; i <= 10; i++) {
-            User user = new User();
-            user.setName("new" + i);
-            user.setEmail("test@qq.com");
-            user.setStatus(0);
-            userList.add(user);
-        }
-        boolean result = userService.saveBatch(userList);
-        System.out.println("result: " + result);
-    }
+//    @Test
+//    public void testSave() {
+//        List<User> userList = new ArrayList<>();
+//        for (int i = 1; i <= 10; i++) {
+//            User user = new User();
+//            user.setName("new" + i);
+//            user.setEmail("test@qq.com");
+//            user.setStatus(0);
+//            userList.add(user);
+//        }
+//        boolean result = userService.saveBatch(userList);
+//        System.out.println("result: " + result);
+//}
 }

@@ -3,11 +3,12 @@ package com.dai.zeus.finance.api.pojo.entity;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableLogic;
+import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 @Data
 //方式一: 表和实体映射关系
-//@TableName("user")
+@TableName("user")
 public class User {
     // mbp默认规则：默认使用id字段作为主键，如果换成类似uid之类的主键，mbp将不知道哪个是主键
     // 需要通过如下注解将属性所对应的字段指定为主键
